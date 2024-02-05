@@ -4,4 +4,4 @@ COPY ./packages/package*.json ./
 RUN npm i
 COPY ./src/* ./src/
 EXPOSE 3032
-ENTRYPOINT ["node main.js"]
+CMD ["node", "main.js"]
