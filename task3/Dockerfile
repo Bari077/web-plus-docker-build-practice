@@ -3,6 +3,5 @@ WORKDIR /home/ilovedocker/app
 COPY ./packages/package*.json ./
 RUN npm i
 COPY ./src/* ./
-RUN ls
 EXPOSE 3032
-ENTRYPOINT ["node main.js"]
+ENTRYPOINT ["node", "main.js"]
